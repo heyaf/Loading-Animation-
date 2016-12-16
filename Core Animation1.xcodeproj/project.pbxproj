@@ -15,6 +15,9 @@
 		183862911DFA960A004608EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1838628F1DFA960A004608EA /* LaunchScreen.storyboard */; };
 		1838629C1DFA960A004608EA /* Core_Animation1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1838629B1DFA960A004608EA /* Core_Animation1Tests.m */; };
 		183862A71DFA960A004608EA /* Core_Animation1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183862A61DFA960A004608EA /* Core_Animation1UITests.m */; };
+		1869E4661E039FDE006F5C26 /* AnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869E4611E039FDE006F5C26 /* AnimationView.m */; };
+		1869E4671E039FDE006F5C26 /* firstLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869E4631E039FDE006F5C26 /* firstLayer.m */; };
+		1869E4681E039FDE006F5C26 /* secLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869E4651E039FDE006F5C26 /* secLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		183862A21DFA960A004608EA /* Core Animation1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core Animation1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		183862A61DFA960A004608EA /* Core_Animation1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core_Animation1UITests.m; sourceTree = "<group>"; };
 		183862A81DFA960A004608EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1869E4601E039FDE006F5C26 /* AnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationView.h; sourceTree = "<group>"; };
+		1869E4611E039FDE006F5C26 /* AnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationView.m; sourceTree = "<group>"; };
+		1869E4621E039FDE006F5C26 /* firstLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firstLayer.h; sourceTree = "<group>"; };
+		1869E4631E039FDE006F5C26 /* firstLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firstLayer.m; sourceTree = "<group>"; };
+		1869E4641E039FDE006F5C26 /* secLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secLayer.h; sourceTree = "<group>"; };
+		1869E4651E039FDE006F5C26 /* secLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,7 @@
 				183862851DFA960A004608EA /* AppDelegate.m */,
 				183862871DFA960A004608EA /* ViewController.h */,
 				183862881DFA960A004608EA /* ViewController.m */,
+				1869E45F1E039FDE006F5C26 /* LoadingView */,
 				1838628A1DFA960A004608EA /* Main.storyboard */,
 				1838628D1DFA960A004608EA /* Assets.xcassets */,
 				1838628F1DFA960A004608EA /* LaunchScreen.storyboard */,
@@ -138,6 +148,19 @@
 				183862A81DFA960A004608EA /* Info.plist */,
 			);
 			path = "Core Animation1UITests";
+			sourceTree = "<group>";
+		};
+		1869E45F1E039FDE006F5C26 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				1869E4601E039FDE006F5C26 /* AnimationView.h */,
+				1869E4611E039FDE006F5C26 /* AnimationView.m */,
+				1869E4621E039FDE006F5C26 /* firstLayer.h */,
+				1869E4631E039FDE006F5C26 /* firstLayer.m */,
+				1869E4641E039FDE006F5C26 /* secLayer.h */,
+				1869E4651E039FDE006F5C26 /* secLayer.m */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1869E4671E039FDE006F5C26 /* firstLayer.m in Sources */,
 				183862891DFA960A004608EA /* ViewController.m in Sources */,
+				1869E4661E039FDE006F5C26 /* AnimationView.m in Sources */,
+				1869E4681E039FDE006F5C26 /* secLayer.m in Sources */,
 				183862861DFA960A004608EA /* AppDelegate.m in Sources */,
 				183862831DFA960A004608EA /* main.m in Sources */,
 			);
@@ -516,6 +542,7 @@
 				183862AD1DFA960A004608EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		183862AE1DFA960A004608EA /* Build configuration list for PBXNativeTarget "Core Animation1Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +551,7 @@
 				183862B01DFA960A004608EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		183862B11DFA960A004608EA /* Build configuration list for PBXNativeTarget "Core Animation1UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +560,7 @@
 				183862B31DFA960A004608EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
